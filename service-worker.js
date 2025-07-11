@@ -1,5 +1,10 @@
 const CACHE_NAME = "cactus-app-v1";
-const urlsToCache = ["index.html", "manifest.json"];
+const urlsToCache = [
+  "index.html",
+  "manifest.json",
+  "web-app-manifest-192x192.png",
+  "web-app-manifest-512x512.png"
+];
 
 self.addEventListener("install", event => {
   event.waitUntil(
