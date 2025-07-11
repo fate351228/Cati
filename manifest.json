@@ -1,20 +1,31 @@
-{
-  "name": "Cactus Water Checker",
-  "short_name": "CactusCheck",
-  "start_url": "index.html",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2e7d32",
-  "icons": [
-    {
-      "src": "icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
-}
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/manifest.json b/manifest.json
+index 1b4b605726ec94055c8a689160d279cd7baa6af1..c01bec6b6f96fee9b24e5f53262655f15d0c077d 100644
+--- a/manifest.json
++++ b/manifest.json
+@@ -1,20 +1,20 @@
+ {
+   "name": "Cactus Water Checker",
+   "short_name": "CactusCheck",
+   "start_url": "index.html",
+   "display": "standalone",
+   "background_color": "#ffffff",
+   "theme_color": "#2e7d32",
+   "icons": [
+     {
+-      "src": "icons/icon-192.png",
++      "src": "web-app-manifest-192x192.png",
+       "sizes": "192x192",
+       "type": "image/png"
+     },
+     {
+-      "src": "icons/icon-512.png",
++      "src": "web-app-manifest-512x512.png",
+       "sizes": "512x512",
+       "type": "image/png"
+     }
+   ]
+ }
+ 
+EOF
+)
